@@ -1,0 +1,24 @@
+{
+  "version": "1.0.5",
+  "groups": [
+    {
+      "name": "Git-Tix",
+      "description": "Launches K8s Cluster",
+      "enabled": true,
+      "terminals": [
+        {
+          "name": "Skaffold",
+          "path": ".",
+          "cmd": "skaffold dev",
+          "num": 0
+        },
+        {
+          "name": "auth microservice workdir",
+          "path": ".",
+          "cmd": "cd auth",
+          "num": 0
+        }
+      ]
+    }
+  ]
+}
