@@ -1,5 +1,7 @@
 # git-tix
+
 Stubhub clone /w following tech stack
+
 - Nextjs
 - Node/Express
 - Mongo
@@ -13,3 +15,7 @@ Stubhub clone /w following tech stack
 - Typescript
 - Testing
 - npm custom modules
+
+#### Creating a kubectl secret for a JWT secret
+
+`k create secret jwt-secret --from-literal=jwt=asdf`

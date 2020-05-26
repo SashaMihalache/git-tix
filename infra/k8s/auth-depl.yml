@@ -15,6 +15,12 @@ spec:
       containers:
         - name: auth
           image: sashamihalache/git-tix-auth
+          env:
+            - name: JWT_KEY # name i will use in nodejs
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret # key object  stored in kubectl
+                  key: JWT_KEY # actualy key from the key object which has value asdf
 ---
 apiVersion: v1
 kind: Service
