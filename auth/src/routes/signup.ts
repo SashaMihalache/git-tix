@@ -41,6 +41,8 @@ router.post(
       jwt: userJwt,
     };
 
+    console.log("Session", req.session.jwt);
+
     res.status(201).send(user);
   }
 );
