@@ -3,8 +3,7 @@ import { body } from "express-validator";
 import jwt from "jsonwebtoken";
 
 import { User } from "../models/user";
-import { BadRequestError } from "../errors/bad-request-error";
-import { validateRequest } from "../middlewares/validate-request";
+import { BadRequestError, validateRequest } from "@git-tix/common";
 
 const router = express.Router();
 
@@ -41,7 +40,7 @@ router.post(
       jwt: userJwt,
     };
 
-    console.log("Session", req.session.jwt);
+    console.log("Session", req.session.jwt, user);
 
     res.status(201).send(user);
   }
