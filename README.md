@@ -19,3 +19,9 @@ Stubhub clone /w following tech stack
 #### Creating a kubectl secret for a JWT secret
 
 `k create secret jwt-secret --from-literal=jwt=asdf`
+
+
+#### dev mode
+`skaffold dev`
+
+you also need @git-tix/common
