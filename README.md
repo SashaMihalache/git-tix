@@ -24,4 +24,7 @@ Stubhub clone /w following tech stack
 #### dev mode
 `skaffold dev`
 
-you also need @git-tix/common
+you also need [@git-tix/common](https://www.npmjs.com/package/@git-tix/common)
+
+#### react app
+start it on https://git-tix.com (after you added in /etc/hosts `127.0.0.1 git-tix.com`
