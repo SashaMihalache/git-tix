@@ -16,9 +16,15 @@ Stubhub clone /w following tech stack
 - Testing
 - npm custom modules
 
+#### Start docker-desktop Kubernetes
+
+#### Add ingress-nginx server
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/cloud/deploy.yaml`
+
+
 #### Creating a kubectl secret for a JWT secret
 
-`k create secret jwt-secret --from-literal=jwt=asdf`
+`k create secret generic jwt-secret --from-literal=jwt=asdf`
 
 
 #### dev mode
