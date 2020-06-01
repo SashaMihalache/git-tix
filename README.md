@@ -24,7 +24,7 @@ Stubhub clone /w following tech stack
 
 #### Creating a kubectl secret for a JWT secret
 
-`k create secret generic jwt-secret --from-literal=jwt=asdf`
+`k create secret generic jwt-secret --from-literal=JWT_KEY=asdf`
 
 
 #### dev mode
